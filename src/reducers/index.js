@@ -1,4 +1,5 @@
-import {selectSong} from '../actions'
+
+import { combineReducers } from 'redux';
 
 
 const songReducer=()=>{
@@ -19,7 +20,10 @@ switch (action.type) {
   default:
     return state;
 }
-
-
-
 };
+
+
+export default combineReducers({
+    songs:songReducer,
+    state:selectedSongReducer
+})
