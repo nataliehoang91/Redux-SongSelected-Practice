@@ -25,5 +25,5 @@ switch (action.type) {
 
 export default combineReducers({
     songs:songReducer,
-    state:selectedSongReducer
+    selectedSong:selectedSongReducer
 })
